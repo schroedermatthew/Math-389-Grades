@@ -1,0 +1,40 @@
+Fan Gao  
+
+Blake Hillier
+XLNet - Generalized Autoregressive Pretraining for Language Understanding
+ALBERT- A LITE BERT FOR SELF-SUPERVISED LEARNING OF LANGUAGE REPRESENTATIONS
+RoBERTe - A Robustly Optimized BERT Pretraining Approach
+
+Grace Li
+A Robust Predictive Model for Stock Price Prediction Using Deep Learning and Natural Language Processing
+Stock Market Forecasting Based on Text Mining Technology- A Support Vector Machine Method
+Stock Trend Prediction Using News Sentiment Analysis
+
+Sarah Lu
+News impact on stock price return via sentiment analysis
+Financial Sentiment Analysis for Risk Prediction
+
+Andrew Marks
+Sentiment Analysis on Twitter to Improve Time Series Contextual Anomaly Detection for Detecting Stock Market Manipulation
+Stock Price Forecasting with Support Vector Machines based on Web Financial Information Sentiment Analysis
+
+Joseph Puhalla
+Constructing Financial Sentimental Factors in Chinese Market Using NLP
+Efficient Estimation of Word Representations in Vector Space
+
+Jody Shu
+A Novel Approach to Short-Term Stock Price Movement Prediction using Transfer Learning
+Predicting stock and stock price index movement using Trend Deterministic Data Preparation and machine learning techniques
+
+Jashaina Thomas
+Ordering-Sensitive and Semantic-Aware Topic Modeling
+Combined document embedding and hierarchical topic model for social media texts analysis
+
+Jessie Xin
+Predicting Market-Volatility from Federal Reserve Board Meeting Minutes NLP for Finance
+Deep Learning for Financial Sentiment Analysis on Finance News Providers
+
+Richard Xu
+An agent strategy for automated stock market trading combining price and order book information
+An Empirical Study of Machine Learning Algorithms for Stock Daily Trading Strategy
+Investment Strategy Optimization Using Technical Analysis and Predictive Modeling in Emerging Markets

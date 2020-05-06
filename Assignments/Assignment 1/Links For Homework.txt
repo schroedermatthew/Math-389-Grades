@@ -1,0 +1,4 @@
+https://towardsdatascience.com/machine-learning-algorithms-part-9-k-means-example-in-python-f2ad05ed5203
+https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html
+https://stackoverflow.com/questions/13936051/adding-ellipses-to-a-principal-component-analysis-pca-plot
+https://matplotlib.org/devdocs/gallery/statistics/confidence_ellipse.html

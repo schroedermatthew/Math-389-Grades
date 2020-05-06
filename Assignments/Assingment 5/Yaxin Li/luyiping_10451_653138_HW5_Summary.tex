@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{HW5-Summary}
+\date{February 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Cointegration-based financial networks study in Chinese stock market}
+The authors of this paper propose a method based on cointegration instead of correlation to construct financial complex network in Chinese stock market. Although this study does not focus solely on PageRank method, they use PageRank to analyze the networks (in Section 3.2). They also used standard methods of network analysis, such as degree centrality, HITS, local clustering coefficient, K-shell and strongly and weakly connected components.\\\\
+The network studied in this paper is obtained starting from the matrix of p-value calculated by Engle–Granger cointegration test between all pairs of stocks. Then some tools for filtering information in complex network are implemented to prune the complete graph described by the above matrix, such as setting a level of statistical significance as a threshold and Planar Maximally Filtered Graph. They also calculate Partial Correlation Planar Graph of these stocks to compare the above networks. Last, they analyze these directed, weighted and non-symmetric networks by using multiple methods of network analysis. The results shed a new light on the underlying mechanisms and driving forces in a financial market and deepen our understanding of financial complex network.\\\\
+They find that the Cointegration Planar Graph (CIPG) and Partial Correlation Planar maximallyfiltered Graph (PCPG) have similar properties such as scale-free, highest relative influences, but CIPG is better to represent these properties than PCPG in this paper. Due to the mean degree of Cointegration Threshold Network (CITN) is large, their properties approximate to corresponding complete graph. They also find results in volume of stocks by performing the same method and analysis. Some possible experimental research is currently under their investigation and will be reported elsewhere.\\\\
+
+
+\section{Cointegration analysis and influence rank—A network approach to global stock markets}
+The authors of this paper study the cointegration relationships among 26 global stock market indices over the periods of sub-prime and European debt crisis and their influence rank. They combine the PageRank algorithm and the cointegration network to identify the most influential stock market index and rank the influence of each index. PageRank method is describe in section 3.4. The results of PageRank method show that the US stock market is the most influential stock market around the world before Lehman Brothers collapse, but it ranks relatively low after Lehman Brothers collapse.\\\\
+Overall, they find that the crises have changed cointegration relationships among stock market indices. The cointegration relationship increased after the Lehman Brothers collapse, while the degree of cointegration gradually decreased from the sub-prime to European debt crisis. The influence of US, Japan and China market indices are entirely distinguished over different periods. Before European debt crisis US stock market is a ‘global factor’ which leads the developed and emerging markets, while the influence of US stock market decreased evidently during the European debt crisis. Before sub-prime crisis, there is no significant evidence to show that other stock markets co-move with China stock market, while it becomes more integrated with other markets during the sub-prime and European debt crisis. Among developed and emerging stock markets, the developed stock markets lead the world stock markets before European debt crisis, while due to the shock of sub-prime and European debt crisis, their influences decreased and emerging stock markets replaced them to lead global stock markets.\\\\
+
+\end{document}

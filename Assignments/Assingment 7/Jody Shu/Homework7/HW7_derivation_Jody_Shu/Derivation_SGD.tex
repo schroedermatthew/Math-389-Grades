@@ -1,0 +1,61 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+%SetFonts
+
+%SetFonts
+\setlength{\parindent}{0pt}
+
+\title{Derivation of Stochastic Gradient Descent}
+\author{Jody Shu}
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\begin{Large}
+\maketitle
+%\section{}
+%\subsection{}
+
+We want to prove:\\
+\\$\nabla l (\theta)=\sum_{i=0}^n[y^{(i)}\frac{1}{h_\theta(x^{(i)}) } ( \frac{\partial}{\partial \theta_j}h_\theta(x^{(i)}))+(1-y^{(i)} )\frac{-1}{(1-h_\theta (x^{(i))})}( \frac{\partial}{\partial \theta_j}h_\theta(x^{(i)})) ]$\\
+=$\sum_{i=0}^n[(y^{(i)}-h_\theta(x^{(i)}))x^{(i)}_{j} ] $\\
+\\
+we know $l(\theta)= \sum_{i=0}^n[ y^{(i)}log h_\theta(x^{(i)})+(1-y^{(i)} )log(1-h_\theta (x^{(i)}) ] $\\
+\\
+So, $\nabla l (\theta)=\sum_{i=0}^n[y^{(i)}\frac{1}{h_\theta(x^{(i)}) } ( \frac{\partial}{\partial \theta_j}h_\theta(x^{(i)}))+(1-y^{(i)} )\frac{-1}{(1-h_\theta (x^{(i))})}( \frac{\partial}{\partial \theta_j}h_\theta(x^{(i)})) ]$\\
+
+since $h_\theta(x)=g(\theta^{T}x)=g(z)=\frac{1}{1+e^{-Z}}\ldots(1)$,\\
+\\
+$\Longrightarrow g'(z)=\frac{-e^{-z}}{(1+e^{-Z})^2}=\frac{1}{1+e^{-Z}} \frac{-e^{-z}}{1+e^{-Z}}=g(z)(1-g(z))\ldots(2)$
+\\
+\\
+Let $\frac{\partial z}{\partial \theta _{j}}=x_j$, \\
+\\
+Then from equation (1) and (2), $ \frac{\partial}{\partial \theta_j}h_\theta(x)=g'(z)\frac{\partial z}{\partial \theta_j}=g(z)(1-g(z))x_j$\\
+\\
+ $\Longrightarrow \nabla l (\theta)=\sum_{i=0}^n[y^{(i)}\frac{1}{g(z)} (g(z)(1-g(z))x^{(i)}_{j})+(1-y^{(i)} )\frac{-1}{(1-g(z))}(g(z)(1-g(z))x^{(i)}_{j}) ]$\\
+ \\
+ $\Longleftrightarrow \sum_{i=0}^n[y^{(i)}(1-g(z))x^{(i)}_{j})-(1-y^{(i)} )(g(z)x^{(i)}_{j}) ] $\\
+ \\
+  $\Longleftrightarrow \sum_{i=0}^n[y^{(i)}x^{(i)}_{j}- y^{(i)}g(z)x^{(i)}_{j}-g(z)x^{(i)}_{j}+ y^{(i)}(g(z)x^{(i)}_{j}) ] $\\
+  \\
+   $\Longleftrightarrow\sum_{i=0}^n[y^{(i)}x^{(i)}_{j}-g(z)x^{(i)}_{j} ] $ (After cancelling terms)\\
+   \\
+$\Longleftrightarrow\sum_{i=0}^n[(y^{(i)}-g(z))x^{(i)}_{j} ] $\\
+
+$\Longleftrightarrow\sum_{i=0}^n[(y^{(i)}-h_\theta(x^{(i)}))x^{(i)}_{j} ] $\\
+
+Now, we have proved that \\
+\\$\nabla l (\theta)=\sum_{i=0}^n[y^{(i)}\frac{1}{h_\theta(x^{(i)}) } ( \frac{\partial}{\partial \theta_j}h_\theta(x^{(i)}))+(1-y^{(i)} )\frac{-1}{(1-h_\theta (x^{(i))})}( \frac{\partial}{\partial \theta_j}h_\theta(x^{(i)})) ]$\\
+=$\sum_{i=0}^n[(y^{(i)}-h_\theta(x^{(i)}))x^{(i)}_{j} ] $\\
+   
+\end{Large}
+\end{document}
+
+
